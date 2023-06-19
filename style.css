@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
+*{
+    margin: 0;
+    padding-left: 0;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+:root{
+    --orange : hsl(26, 100%, 55%);
+    --paleOrange : hsl(25, 100%, 70%);
+    --VeryDarkBlue: hsl(220, 13%, 13%);
+    --darkGrayishBlue: hsl(219, 9%, 45%);
+    --grayishBlue: hsl(220, 14%, 75%);
+    --lightGrayishBlue: hsl(223, 64%, 98%);
+    --white: hsl(0, 0%, 100%);
+    --black : hsl(0, 0%, 0%);
+    --grey : #666
+}
+body {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    /* width: 1440px; */
+    width: 100%;
+    height: 100%;
+    /* justify-content: center; */
+    /* background: url(./desktop-design.jpg); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    background-position-y: 100px;
+}
+body #header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+    margin-top: 5px;
+    /* border-bottom: solid 2px; */
+    background: var(--white);
+}
+body #header #part2{
+    position: relative;
+    display: flex;
+    flex-grow: 1;
+    padding-left: 5%;
+}
+body #header #part2 ul li {
+    position: relative;
+    display: flex;
+    gap: 50px;
+}
+body #header #part2 ul li a{
+    border: 1;
+    text-decoration: none;
+    color: var(--grey);
+    font-size: 16px;
+    transition: 300ms;
+}
+body #header #part2 ul li a:hover{
+    color: var(--orange);
+    font-weight: 900;
+    transform: translateY(-10px);
+    transition: 300ms;
+}
+body #header #part3{
+    position: relative;
+    display: flex;
+    /* height: 100%; */
+    flex-wrap: wrap;
+}
+body #header #part3 ul li  {
+    position: relative;
+    display: flex;
+    gap: 20px;
+    /* height: 100%; */
+    justify-content: flex-end;
+}
+body #header #part3 ul li  span {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    border-radius: 50%;
+    /* background: red; */
+    cursor: pointer;
+}
+body #header #part3 ul li span #avatar {
+    width: 50px;
+}
+
+
+
+
+
+
+
+body .bodyPart {
+    position: relative;
+    display: flex;
+    height: 90%;
+    flex-direction: row;
+    justify-content: space-around;
+    z-index: -1;
+    /* background: green; */
+}
+body .bodyPart #pics {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    /* height: 100vh; */
+    z-index: 4;
+    /* background-color: red; */
+}
+body .bodyPart #pics #bigPic {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 70%;
+    /* background: greenyellow; */
+}
+body .bodyPart #pics #bigPic img{
+    width: 450px;
+    border-radius: 20px;
+}
+body .bodyPart #pics #smallerPics {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    width: 100%;
+    height:20%;
+    /* background-color: gray; */
+}
+body .bodyPart #pics #smallerPics #picsGroup {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 450px;
+    top: 20px;
+    /* height: 200px; */
+    /* background: green; */
+}
+body .bodyPart #pics #smallerPics #picsGroup img{
+    height: 90px;
+    border-radius: 20px;
+    transition: 300ms;
+}
+
+
+
+
+body .bodyPart #words  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
+    gap: 20px;
+    width: 50%;
+    height: 100%;
+    /* background: blue; */
+}
+body .bodyPart #words > div {
+    /* margin-left: -20px; */
+    width: 100%;
+    margin-right: 20px;
+    /* background: hotpink; */
+    scale: 1;
+   /* height: ; */
+}
+body .bodyPart #words #head1 p{
+    color: var(--orange);
+    font-size: 1.5em;
+    font-weight: 1000;
+    /* background: green; */
+}
+body .bodyPart #words #head2 p{
+    font-size: 4em;
+    font-weight: 900;
+}
+body .bodyPart #words #paragraph p{
+    padding-right: 50px;
+    font-size: 20px;
+    color: var(--grey);
+}
+
+
+
+
+
+body .bodyPart #words #price {
+    display: flex;
+    height: 50px;
+    align-items: center;
+    /* justify-content: space-between; */
+    /* background: green; */
+}
+/* body .bodyPart #words #price #price1 {
+    height: inherit;
+    width: inherit;
+} */
+body .bodyPart #words #price #price1Paragraph{
+    display: flex;
+    align-items: center;
+    /* background: greenyellow; */
+    width: 100px;
+    height: inherit;
+    font-size: 1.4em;
+    font-weight: 950;
+}
+body .bodyPart #words #price #percentage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 30px;
+    color: var(--orange);
+    background: var(--paleOrange);
+    /* background: greenyellow; */
+    font-weight: 900;
+    border-radius: 7px;
+}
+body .bodyPart #words #cancel #canceledPrice{
+    /* background: white; */
+    color: var(--grey);
+    font-weight: 900;
+    text-decoration: line-through;
+    text-decoration-thickness: 2px;
+}
+body .bodyPart #words #boxes {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    width: 90%;
+    /* background: darkcyan; */
+}
+body .bodyPart #words #boxes > span{
+    width: 200px;
+    border-radius: 10px;
+    height: inherit;
+    cursor: pointer;
+    /* background: fuchsia; */
+}
+body .bodyPart #words #boxes #items{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: var(--grayishBlue);
+}
+.math {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    height: inherit;
+    width: calc(100% / 3);
+    border: 0;
+    cursor: pointer;
+    z-index: 2;
+}
+.math.img{
+    cursor: pointer;
+
+}
+.math:hover {
+    cursor: pointer;
+}
+#count{
+    font-size: 1.3em;
+    font-weight: 900;
+}
+#submit {
+    background: var(--orange);
+}
+#submit #cart{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: inherit;
+    cursor: pointer;
+    /* background: yellow; */
+}
+#submit #cart p{
+    font-weight: 900;
+    color: var(--white);
+}
